@@ -68,6 +68,11 @@ import Gambar241 from "../assets/Gambar241.png"
 
 import Gambar251 from "../assets/Gambar251.jpeg"
 import Gambar261 from "../assets/Gambar261.jpeg"
+
+
+import Gambar271 from "../assets/Gambar271.jpeg"
+
+
 function Utama() {
 
   useEffect(() => {
@@ -201,6 +206,34 @@ function Utama() {
 
 
 
+    gsap.fromTo(".contact-section", { opacity: 0, y: 50 }, {
+      opacity: 1, y: 0, delay: 1, duration: 1, scrollTrigger: {
+        trigger: ".contact-section",
+      }
+    })
+
+
+
+
+
+
+    gsap.fromTo(".pages", { opacity: 0, y: 50 }, {
+      opacity: 1, y: 0, delay: 1, stagger: 0.4, duration: 1, scrollTrigger: {
+        trigger: ".pages",
+      }
+    })
+
+
+
+    gsap.fromTo(".pagess1", { opacity: 0, y: 50 }, {
+      opacity: 1, y: 0, delay: 1, duration: 1, scrollTrigger: {
+        trigger: ".pagess1",
+      }
+    })
+
+
+
+
 
 
 
@@ -236,16 +269,16 @@ function Utama() {
             <div style={{ display: "flex", gap: "400px" }}>
 
               <div style={{ display: "flex", gap: 35 }}>
-                <p className='alltext'>Home</p>
-                <p className='alltext'>About</p>
-                <p className='alltext'>Blog</p>
-                <p className='alltext'>Pages</p>
-                <p className='alltext'>Cart</p>
+                <a href='/' className='alltext'>Home</a>
+                <a href='/' className='alltext'>About</a>
+                <a href='/' className='alltext'>Blog</a>
+                <a href='/' className='alltext'>Pages</a>
+                <a href='/' className='alltext'>Cart</a>
               </div>
 
               <div>
 
-                <p className='contactus'>Contact us</p>
+                <p  className='contactus'> <a className='linkCS'  href='/'>Contact us</a></p>
 
               </div>
 
@@ -830,34 +863,318 @@ function Utama() {
           </div>
 
 
-          <div style={{ marginTop: 300,marginLeft: -60, }}>
+          <div style={{ marginTop: 300, marginLeft: -51, backgroundColor: "black" }}>
 
-            <div>
+            {/* <div>
 
               <div className="contact-section">
 
                 <div className="text-container">
                   <h2 >Contact us today!</h2>
                   <p>
-                    Nunc tortor aliquam nec sed nunc convallis tincidunt quam
+                    Nunc tortor aliquam nec sed nunc convallis tincidunt quam<br/>
                     felis volutpat ut consequat turpis risus lacus hendrerit.
                   </p>
                 </div>
 
                 <div className="button-container">
+
+                  <img style={{width:400}} src={Gambar271} alt='Gambar271' />
                   <button className="contact-button">Contact us</button>
                   <button className="projects-button">Our projects</button>
 
                 </div>
 
               </div>
+            </div> */}
+
+
+
+
+
+
+            <div className="contact-section">
+              <div className="left-text">
+                <h2 >Contact us today!</h2>
+                <p>
+                  Nunc tortor aliquam nec sed nunc convallis tincidunt quam<br />
+                  felis volutpat ut consequat turpis risus lacus hendrerit.
+                </p>
+              </div>
+
+              <div className="right-image">
+                <img className="background-image" src={Gambar271} alt="Gambar271" />
+                <div className="overlay-buttons">
+                  <button style={{ backgroundColor: "black", color: "white" }} className="contact-button">Contact us</button>
+                  <button style={{ color: 'black', backgroundColor: "white", }} className="projects-button">Our projects</button>
+                </div>
+              </div>
             </div>
 
 
+
+
+            <div style={{ color: "white", marginTop: 50, }}>
+
+
+
+
+
+              {/* 
+              <div style={{ display: "flex", marginLeft: 95 }} className='footer-bot'>
+                <div className='layout1-footer'>
+
+                  <div className='divBranding'>
+                    <a href="/">
+                      <img className='imagebro' style={{ width: 300 }} src={Branding} alt="Branding" />
+                    </a>
+                  </div>
+
+                  <p >
+                    Copyright © Brandingfolio X | Designed by <br />{' '}
+                    <a style={{ color: "white" }} href='#'>BRIX Templates</a> - Powered by <a style={{ color: "white" }} href='#'>Webflow</a>
+                  </p>
+                  <h4>Subscribe to our newsletter</h4>
+
+                  <label  >
+                    <input style={{padding:10}} type="email" placeholder="Enter your email address"  />
+                    <button style={{backgroundColor:"white",padding:10}}>Subscribe</button>
+                  </label>
+
+                </div> */}
+
+              {/* <div className='layout2-footer'>
+                  <h4>Pages</h4>
+                  <div className='pages-footer'>
+                    <div>
+                      <ul>
+                        <li>
+                          <a href='#'>Preview</a>
+                        </li>
+                        <li>
+                          <a href='#'>Home V1</a>
+                        </li>
+                        <li>
+                          <a href='#'>Home V2</a>
+                        </li>
+                        <li>
+                          <a href='#'>Home V3</a>
+                        </li>
+                        <li>
+                          <a href='#'>About</a>
+                        </li>
+                        <li>
+                          <a href='#'>Blog V1</a>
+                        </li>
+                        <li>
+                          <a href='#'>Blog V2</a>
+                        </li>
+                        <li>
+                          <a href='#'>Blog V3</a>
+                        </li>
+                        <li>
+                          <a href='#'>Blog post</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul>
+                        <li>
+                          <a href='#'>Blog category</a>
+                        </li>
+                        <li>
+                          <a href='#'>Packages</a>
+                        </li>
+                        <li>
+                          <a href='#'>Packages single</a>
+                        </li>
+                        <li>
+                          <a href='#'>Contact v1</a>
+                        </li>
+                        <li>
+                          <a href='#'>Contact v2</a>
+                        </li>
+                        <li>
+                          <a href='#'>Contact v3</a>
+                        </li>
+                        <li>
+                          <a href='#'>Portfolio</a>
+                        </li>
+                        <li>
+                          <a href='#'>Portfolio Single</a>
+                        </li>
+                        <li>
+                          <a href='#'>Team member</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> */}
+
+              {/* <div className='layout3-footer'>
+                  <h4>Utility pages</h4>
+                  <ul>
+                    <li>
+                      <a href='#'>Blog category</a>
+                    </li>
+                    <li>
+                      <a href='#'>Packages</a>
+                    </li>
+                    <li>
+                      <a href='#'>Packages single</a>
+                    </li>
+                    <li>
+                      <a href='#'>Contact v1</a>
+                    </li>
+                    <li>
+                      <a href='#'>Contact v2</a>
+                    </li>
+                    <li>
+                      <a href='#'>Contact v3</a>
+                    </li>
+                    <li>
+                      <a href='#'>Portfolio</a>
+                    </li>
+                    <li>
+                      <a href='#'>Portfolio Single</a>
+                    </li>
+                    <li>
+                      <a href='#'>Team member</a>
+                    </li>
+                  </ul>
+                </div> */}
+
+              {/* <div className='layout4-footer'>
+                  <h4>Follow us</h4>
+                  <ul>
+                    <li>
+                      <a href='#'><img src="Facebook.svg" alt="" />Facebook</a>
+                    </li>
+                    <li>
+                      <a href='#'><img src="Twitter.svg" alt="" />Twitter</a>
+                    </li>
+                    <li>
+                      <a href='#'><img src="Instagram.svg" alt="" />Instagram</a>
+                    </li>
+                    <li>
+                      <a href='#'> <img src="Linkdin.svg" alt="" />LinkedIn</a>
+                    </li>
+                    <li>
+                      <a href='#'><img src="Youtube.svg" alt="" />Youtube</a>
+                    </li>
+                  </ul>
+                </div> */}
+
+
+              {/* </div> */}
+
+
+
+
+
+
+
+            </div>
+
+
+            <footer className="footer">
+
+              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", justifyContent: "space-evenly" }}>
+
+                <div className='pagess1'>
+
+                  <div className="footer-header">
+                    <div className='divBranding'>
+                      <a href="/">
+                        <img className='imagebro' style={{ width: 300 }} src={Branding} alt="Branding" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <p className="copyright">
+                    Copyright © Brandingfolio X | Designed by<br /> <a style={{ color: "white" }} href="#" target="_blank" rel="noopener noreferrer">BRIX Templates</a> - Powered by
+                    <a style={{ color: "white" }} href="#" target="_blank" rel="noopener noreferrer">Webflow</a>
+                  </p>
+                  <div className="newsletter">
+                    <h3>Subscribe to our newsletter</h3>
+                    <input type="email" placeholder="Enter your email" />
+                    <button>Subscribe</button>
+                  </div>
+
+
+                </div>
+
+
+
+
+                <div className="footer-links">
+
+                  <div className="pages">
+                    <h4>Pages</h4>
+                    <ul >
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Preview</a>   </li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Home V1</a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Home V2</a>  </li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Home V3</a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>About</a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Blog V1</a>  </li>
+                      <li className='ALLANIMATION'>  <a className='linknya' href='#'>Blog V2</a> </li>
+                      <li className='ALLANIMATION'>  <a className='linknya' href='#'>Blog V3</a> </li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Blog post</a> </li>
+                    </ul>
+                  </div>
+
+
+
+                  <div style={{ marginTop: 30 }} className="pages">
+
+                    <ul>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Blog category </a> </li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Packages </a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Packages single </a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Contact v1 </a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Contact v2 </a></li>
+                      <li className='ALLANIMATION'>  <a className='linknya' href='#'>Contact v3 </a></li>
+                      <li className='ALLANIMATION'>  <a className='linknya' href='#'>Portfolio </a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Portfolio Single </a></li>
+                      <li className='ALLANIMATION'>  <a className='linknya' href='#'>Team member </a></li>
+                    </ul>
+                  </div>
+
+
+
+                  <div className="pages">
+                    <h4>Utility pages</h4>
+                    <ul>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Style guide </a> </li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Start here </a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>404 Not found </a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Password protected </a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Licenses</a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Changelog</a></li>
+                    </ul>
+                  </div>
+
+                  <div className="pages">
+                    <h4>Follow us</h4>
+                    <ul>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Facebook </a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Twitter </a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Instagram </a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>LinkedIn </a></li>
+                      <li className='ALLANIMATION'> <a className='linknya' href='#'>Youtube </a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+            </footer>
+
+
           </div>
-
-
-
 
 
 

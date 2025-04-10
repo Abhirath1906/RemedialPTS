@@ -79,6 +79,7 @@ html {
   margin-top: 7px;
   color: rgb(0, 0, 0);
   transition: background 0.3s, transform 0.3s;
+  text-decoration: none;
 }
 
 .alltext:hover {
@@ -425,9 +426,9 @@ html {
 
 
 
-.contact-section {
+/* .contact-section {
   display: flex;
-  justify-content:space-around;
+  justify-content:center;
   align-items: center;
   padding: 20px;
  background-color: rgb(0, 0, 0);
@@ -461,7 +462,7 @@ html {
   border: none;
   padding: 10px 20px;
   border-radius: 50px;
-  /* Round button */
+ 
   cursor: pointer;
 }
 
@@ -471,11 +472,192 @@ html {
   border: 1px solid #000;
   padding: 10px 20px;
   border-radius: 20px;
-  /* Rounded edges */
+
   cursor: pointer;
 }
 
 .contact-button:hover,
 .projects-button:hover {
   opacity: 0.8;
+} */
+
+
+
+
+
+.contact-section {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 40px;
+  background-color: black;
+  margin-left: 50px;
+}
+
+.left-text {
+  flex: 1;
+  max-width: 500px;
+  padding: 48px;
+  /* border-radius: 15px; */
+  background-color: white;
+}
+
+.right-image {
+  position: relative;
+  flex-shrink: 0;
+  width: 400px;
+  /* border-radius: 20px; */
+  /* overflow: hidden; */
+}
+
+.background-image {
+  width: 500px;
+  height: auto;
+  display: block;
+  /* border-radius: 20px; */
+}
+
+.overlay-buttons {
+  position: absolute;
+  bottom: 75px;
+  left: 150px;
+  display: flex;
+  gap: 10px;
+}
+
+.contact-button,
+.projects-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+  color: #000;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.contact-button:hover,
+.projects-button:hover {
+  transform: scale(0.9);
+  cursor: pointer
+}
+
+
+
+.imagebro{
+  filter: brightness(30); /* Menambah kecerahan gambar */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer-header {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.copyright {
+  margin: 10px 0;
+  font-size: 0.85em;
+}
+
+.newsletter {
+  margin-top: 80px;
+}
+
+.newsletter input {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  gap: 90px;
+}
+
+.footer-links h4 {
+  margin: 10px 0;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+
+
+.ALLANIMATION{
+
+  transition: background 0.3s, transform 0.3s;
+
+
+}
+
+.ALLANIMATION:hover{
+  color: rgb(255, 255, 154);
+  cursor: pointer
+}
+
+
+
+.linknya{
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.linknya:hover{
+  color: rgb(255, 255, 154);
+  cursor: pointer
+}
+
+
+.linkCS{
+  text-decoration: none;
+  color: white;
 }
